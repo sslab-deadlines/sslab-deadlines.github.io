@@ -702,3 +702,26 @@
   date: September 25-29
   place: The Hague, The Netherlands
   tags: [SEC, PRIV, SHOP]
+  
+- name: ASPLOS
+  year: 2024
+  date: "March 25-29"
+  description: ACM Conference on Architectural Support for Programming Languages and Operating Systems
+  link: https://www.asplos-conference.org
+  deadline:
+    - "2023-04-20 23:59"
+    - "2023-08-10 23:59"
+    - "2023-11-30 23:59"
+  place: California, USA
+  tags: [SYS, CONF]
+  
+- name: EuroSys
+  year: 2024
+  date: "23-26 April"
+  description: European Conference on Computer Systems
+  link: https://www.eurosys.org
+  deadline:
+    - "2023-05-24 23:59"
+    - "2023-08-19 23:59"
+  place: California, USA
+  tags: [SYS, CONF]
