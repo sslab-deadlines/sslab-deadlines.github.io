@@ -29,15 +29,6 @@
             {{ site.description }}
             <p>To add/update a conference, <a target="_blank" href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.
             <p>Last update: {{ site.time | date: "%-d %B %Y" }}
-            <div>
-                <p>
-                    Deadlines as iCal: 
-                    <a href="{{site.baseurl}}/ical/deadlines-all.ical">all</a>; 
-                    <a href="{{site.baseurl}}/ical/deadlines-sec.ical">security</a>; 
-                    <a href="{{site.baseurl}}/ical/deadlines-priv.ical">privacy</a>; 
-                    <a href="{{site.baseurl}}/ical/deadlines-crypto.ical">crypto</a>
-                </p>
-            </div>
           </div>
         </div>
         <hr>
@@ -71,9 +62,16 @@
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
         <div id="{{ conf_id }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}">
           <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <h2><a href="{{conf.link}}">{{conf.name}} {{conf.year}}</a></h2>
+              <div class="col-sm-6">
+              <h2><a href="{{conf.link}}">{{conf.name}} {{conf.year}}</a></h2>
                 <div class="meta">
+                    Type: 
+                  {% for tag in conf.tags %}
+                  <a href="#" class="topic-tag" >
+                    #{{tag}}
+                  </a>
+                  {% endfor %}<br>
+                  Tier: {{conf.tier}}<br>
                   {{ conf.description }}<br>
                   {{conf.date | replace: '-', '–'}} {% if conf.place %}// <a href="http://maps.google.com/?q={{conf.place}}">{{conf.place}}</a>{% endif %}<br>
                 </div>

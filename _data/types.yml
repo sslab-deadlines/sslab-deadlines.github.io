@@ -1,12 +1,10 @@
 ---
+- name: System
+  tag: SYS
+- name: Software Engineering
+  tag: SE
 - name: Security
   tag: SEC
 - name: Privacy
   tag: PRIV
-- name: Crypto
-  tag: CRYPTO
-- name: Conference
-  tag: CONF
-- name: Workshop
-  tag: SHOP
   

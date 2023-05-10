@@ -12,6 +12,7 @@
     - "2023-08-03 23:59"
     - "2023-12-06 23:59"
   place: San Francisco, California, USA
+  tier: 1
   tags: [SEC, PRIV, CONF]
 
 - name: CCS
@@ -23,6 +24,7 @@
     - "2023-05-04 23:59"
   date: November 26-30
   place: Copenhagen, Denmark
+  tier: 1
   tags: [SEC, PRIV, CONF]
 
 - name: USENIX Security
@@ -35,6 +37,7 @@
     - "2024-02-08 23:59"
   date: "August 14-16"
   place: Philadelphia, PA, USA
+  tier: 1
   tags: [SEC, PRIV, CONF]
 
 - name: NDSS
